@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #texto {
+            color: blue;
+        }
+
+        .abc {
+            color: gray;
+        }
+
+        div.abc.dfg.yug {
+            color: deeppink;
+        }
+
+        div.abc123.xyz:not(.hghg) {
+            color: gray;
+            font-weight: bold;
+        }
+
+        ul.lista li:nth-of-type(2), /* Segundo item sequencial */
+        ul.lista li:nth-last-of-type(2) /* Segundo item de tras para frente */
+        {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <div class="abc123 xyz">Div 1</div>
+    <div class="abc123">Div 2</div>
+    <div class="xyz abc123 rteyfg hghg">Div 3</div>
+
+    <p class="abc123"></p>
+    <div class="abc123"></div>
+    <nav class="abc123"></nav>
+
+    <div id="texto" class="abc dfg yug">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="abc">Lorem ipsum dolor sit amet consectetur.</div>
+    <form action=""></form>
+    <form action=""></form>
+</body>
+</html>
